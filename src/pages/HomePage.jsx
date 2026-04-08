@@ -6,9 +6,13 @@ import {
   doctors,
   dashboardStats,
   homeHeroHighlights,
-  brandAssets,
 } from "../data/doctors.js";
 import { usePageChrome } from "../hooks/usePageChrome.js";
+
+const bannerImages = [
+  "https://i.ibb.co.com/b5QYZb2Z/female-doctor-hospital-room.jpg",
+  "https://i.ibb.co.com/s9vPPrjX/portrait-smiling-young-doctors-standing-together-portrait-medical-staff-inside-modern-hospital-smili.jpg",
+];
 
 export function HomePage() {
   const [showAll, setShowAll] = useState(false);
@@ -84,14 +88,14 @@ export function HomePage() {
           <div className="mt-8 grid gap-4 md:grid-cols-2">
             <div className="overflow-hidden rounded-[28px] border border-white/70 bg-white/70 shadow-lg backdrop-blur">
               <img
-                src={brandAssets.bannerImage}
+                src={bannerImages[0]}
                 alt="Doctors in a clinic"
                 className="h-60 w-full object-cover"
               />
             </div>
             <div className="overflow-hidden rounded-[28px] border border-white/70 bg-white/70 shadow-lg backdrop-blur">
               <img
-                src={brandAssets.heroImage}
+                src={bannerImages[1]}
                 alt="Medical appointment setup"
                 className="h-60 w-full object-cover"
               />

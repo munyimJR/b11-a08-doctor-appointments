@@ -1,13 +1,9 @@
 import bannerImage from "../assets/banner-img-1.png";
-import doctorSampleImage from "../assets/doctor-sample.png";
-import heroImage from "../assets/hero.png";
 import logoImage from "../assets/logo.png";
 import successDoctorsImage from "../assets/success-doctor.png";
 import successPatientsImage from "../assets/success-patients.png";
 import successReviewsImage from "../assets/success-review.png";
 import successStaffsImage from "../assets/success-staffs.png";
-
-const profileImage = () => doctorSampleImage;
 
 export const doctors = [
   {
@@ -25,7 +21,7 @@ export const doctors = [
     slogan:
       "Comprehensive internal medicine care focused on diagnosis, prevention, and long-term patient support.",
     bio: "Dr. Cameron Williamson manages chronic illnesses, preventive screenings, and complex general health concerns with a calm, evidence-based approach.",
-    image: profileImage(),
+    image: "https://i.ibb.co.com/DDBV5nHV/istockphoto-2224482459-612x612.jpg",
   },
   {
     id: "doctor-2",
@@ -42,7 +38,7 @@ export const doctors = [
     slogan:
       "Cardiac consultations tailored around prevention, accurate diagnostics, and practical treatment plans.",
     bio: "Dr. Brianna Cole specializes in heart health, blood pressure management, and early intervention for cardiovascular risk.",
-    image: profileImage(),
+    image: "https://i.ibb.co.com/d0QNfvRv/istockphoto-1399387349-612x612.jpg",
   },
   {
     id: "doctor-3",
@@ -59,7 +55,7 @@ export const doctors = [
     slogan:
       "Neurology care for headaches, seizure disorders, stroke recovery, and complex neurological symptoms.",
     bio: "Dr. Nasim Rahman offers structured neurological assessments and collaborates closely with families on long-term treatment.",
-    image: profileImage(),
+    image: "https://i.ibb.co.com/tTrgGWKg/istockphoto-1713387020-612x612.jpg",
   },
   {
     id: "doctor-4",
@@ -76,7 +72,7 @@ export const doctors = [
     slogan:
       "Supportive women’s health care for routine checkups, pregnancy support, and specialist consultations.",
     bio: "Dr. Mariam Hossain provides patient-centered gynecology care with a strong focus on comfort, education, and prevention.",
-    image: profileImage(),
+    image: "https://i.ibb.co.com/nqBR3b1y/istockphoto-1293826206-612x612.jpg",
   },
   {
     id: "doctor-5",
@@ -93,7 +89,7 @@ export const doctors = [
     slogan:
       "Bone, joint, and sports injury care designed to restore mobility and reduce pain.",
     bio: "Dr. Sajid Ahmed supports fracture care, joint pain management, and surgical consultation for orthopedic conditions.",
-    image: profileImage(),
+    image: "https://i.ibb.co.com/N60fkk2j/istockphoto-2177187706-612x612.jpg",
   },
   {
     id: "doctor-6",
@@ -110,7 +106,7 @@ export const doctors = [
     slogan:
       "Skin, hair, and nail care with treatment plans built for long-term confidence and clarity.",
     bio: "Dr. Rumana Jahan helps with acne, eczema, pigmentation, and cosmetic skin care with a practical approach.",
-    image: profileImage(),
+    image: "https://i.ibb.co.com/gMQJZvWN/istockphoto-1944705182-612x612.jpg",
   },
   {
     id: "doctor-7",
@@ -127,7 +123,7 @@ export const doctors = [
     slogan:
       "Child health consultations with a focus on growth, vaccination, and family reassurance.",
     bio: "Dr. Mohammad Farid supports newborn care, childhood infections, nutrition guidance, and routine pediatric checkups.",
-    image: profileImage(),
+    image: "https://i.ibb.co.com/gXnRbcY/istockphoto-1628865103-612x612.jpg",
   },
   {
     id: "doctor-8",
@@ -144,7 +140,7 @@ export const doctors = [
     slogan:
       "Hormone and metabolism care built around diabetes, thyroid, and lifestyle support.",
     bio: "Dr. Tasnim Sultana focuses on diabetes control, thyroid care, and evidence-based metabolic health management.",
-    image: profileImage(),
+    image: "https://i.ibb.co.com/qYmsznmZ/istockphoto-2169354843-612x612.jpg",
   },
   {
     id: "doctor-9",
@@ -161,7 +157,7 @@ export const doctors = [
     slogan:
       "Surgical consultations with careful planning and transparent pre-op guidance.",
     bio: "Dr. Hasan Kabir handles surgical evaluation, procedure planning, and post-operative recovery support.",
-    image: profileImage(),
+    image: "https://i.ibb.co.com/r2Qm9Bxt/istockphoto-1146068892-612x612.jpg",
   },
   {
     id: "doctor-10",
@@ -178,7 +174,7 @@ export const doctors = [
     slogan:
       "ENT consultation for ear, nose, throat, and voice concerns with precise diagnostic care.",
     bio: "Dr. Sharmin Zaman treats sinus issues, hearing concerns, throat infections, and allergy-related complaints.",
-    image: profileImage(),
+    image: "https://i.ibb.co.com/sdvTdHGp/istockphoto-1273663470-612x612.jpg",
   },
   {
     id: "doctor-11",
@@ -195,7 +191,7 @@ export const doctors = [
     slogan:
       "Confidential mental health care focused on steady progress and practical support.",
     bio: "Dr. Rafiq Uddin provides psychiatric assessments, therapy planning, and medication management when required.",
-    image: profileImage(),
+    image: "https://i.ibb.co.com/4wDrtVLg/istockphoto-1483531215-612x612.jpg",
   },
   {
     id: "doctor-12",
@@ -212,7 +208,7 @@ export const doctors = [
     slogan:
       "Imaging review and diagnostic support that helps patients and physicians make faster decisions.",
     bio: "Dr. Salma Karim interprets imaging studies with close attention to detail and clinical relevance.",
-    image: profileImage(),
+    image: "https://i.ibb.co.com/x8Dk7ZX2/istockphoto-1269501069-612x612.jpg",
   },
 ];
 
@@ -251,7 +247,6 @@ export const homeHeroHighlights = [
 
 export const brandAssets = {
   bannerImage,
-  heroImage,
   logoImage,
   successDoctorsImage,
   successPatientsImage,
