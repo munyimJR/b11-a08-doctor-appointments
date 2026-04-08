@@ -1,4 +1,5 @@
-import { NavLink, Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import { brandAssets } from "../data/doctors.js";
 
 const navItems = [
@@ -9,6 +10,13 @@ const navItems = [
 ];
 
 export function Navbar() {
+  const location = useLocation();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    setMobileMenuOpen(false);
+  }, [location.pathname]);
+
   return (
     <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/90 backdrop-blur-xl">
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
@@ -45,9 +53,10 @@ export function Navbar() {
           <div className="dropdown dropdown-end md:hidden">
             <button
               type="button"
-              tabIndex={0}
+              aria-expanded={mobileMenuOpen}
               className="btn btn-ghost btn-circle border border-slate-200 text-slate-700"
               aria-label="Open menu"
+              onClick={() => setMobileMenuOpen((current) => !current)}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -64,16 +73,20 @@ export function Navbar() {
                 />
               </svg>
             </button>
-            <ul
-              tabIndex={0}
-              className="menu dropdown-content z-[1] mt-3 w-52 rounded-box border border-slate-200 bg-white p-2 shadow-xl"
-            >
-              {navItems.map((item) => (
-                <li key={item.to}>
-                  <NavLink to={item.to}>{item.label}</NavLink>
-                </li>
-              ))}
-            </ul>
+            {mobileMenuOpen ? (
+              <ul className="menu dropdown-content z-[1] mt-3 w-52 rounded-box border border-slate-200 bg-white p-2 shadow-xl">
+                {navItems.map((item) => (
+                  <li key={item.to}>
+                    <NavLink
+                      to={item.to}
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {item.label}
+                    </NavLink>
+                  </li>
+                ))}
+              </ul>
+            ) : null}
           </div>
 
           <Link
