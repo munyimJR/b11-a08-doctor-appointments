@@ -28,28 +28,28 @@ export function BlogsPage() {
   usePageChrome({ footerVisible: true, title: "Blogs | DocTalk" });
 
   return (
-    <div className="mx-auto w-full max-w-7xl px-4 py-6 sm:px-6 lg:px-8 lg:py-8">
-      <section className="rounded-[34px] border border-slate-200 bg-white p-6 shadow-[0_18px_54px_rgba(15,23,42,0.08)] sm:p-8">
+    <div className="mx-auto w-full max-w-7xl px-4 py-5 sm:px-6 lg:px-8 lg:py-8">
+      <section className="rounded-[34px] border border-slate-200 bg-white p-5 shadow-[0_18px_54px_rgba(15,23,42,0.08)] sm:p-8">
         <div className="mx-auto max-w-3xl text-center">
-          <h1 className="font-(family-name:--font-heading) text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+          <h1 className="font-(family-name:--font-heading) text-2xl font-bold tracking-tight text-slate-900 sm:text-4xl">
             Medical Booking Blog Notes
           </h1>
-          <p className="mt-4 text-sm leading-7 text-slate-500 sm:text-base">
+          <p className="mt-3 text-sm leading-6 text-slate-500 sm:mt-4 sm:leading-7 sm:text-base">
             These short answers explain the React ideas used throughout this
             booking application.
           </p>
         </div>
 
-        <div className="mt-8 space-y-4">
+        <div className="mt-6 space-y-3 sm:mt-8 sm:space-y-4">
           {articles.map((article) => (
             <details
               key={article.title}
-              className="group rounded-3xl border border-slate-200 bg-slate-50 p-5 open:bg-white open:shadow-[0_12px_36px_rgba(15,23,42,0.06)]"
+              className="group rounded-2xl border border-slate-200 bg-slate-50 p-4 open:bg-white open:shadow-[0_12px_36px_rgba(15,23,42,0.06)] sm:rounded-3xl sm:p-5"
             >
-              <summary className="cursor-pointer list-none text-left text-lg font-bold text-slate-900">
+              <summary className="cursor-pointer list-none text-left text-base font-bold leading-6 text-slate-900 sm:text-lg">
                 {article.title}
               </summary>
-              <p className="mt-4 text-sm leading-7 text-slate-600">
+              <p className="mt-3 text-sm leading-6 text-slate-600 sm:mt-4 sm:leading-7">
                 {article.body}
               </p>
             </details>

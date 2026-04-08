@@ -157,10 +157,10 @@ export function BookingsPage() {
           </div>
         ) : (
           <div className="mt-10 rounded-[28px] border border-dashed border-slate-300 bg-slate-50 p-10 text-center">
-            <h2 className="font-(family-name:--font-heading) text-3xl font-bold text-slate-900">
+            <h2 className="font-(family-name:--font-heading) text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
               No appointments found
             </h2>
-            <p className="mt-3 text-sm leading-7 text-slate-500">
+            <p className="mx-auto mt-3 max-w-md text-sm leading-7 text-slate-500">
               Add a doctor from the homepage to start managing your bookings.
             </p>
             <Link
