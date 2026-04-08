@@ -1,91 +1,69 @@
+import { Link } from "react-router-dom";
 import { usePageChrome } from "../hooks/usePageChrome.js";
 
 export function ContactUsPage() {
-  usePageChrome({ footerVisible: true, title: "Contact Us | DocTalk" });
+  usePageChrome({ footerVisible: false, title: "Page Not Found | DocTalk" });
 
   return (
-    <div className="mx-auto w-full max-w-7xl px-4 py-6 sm:px-6 lg:px-8 lg:py-8">
-      <section className="rounded-[34px] border border-slate-200 bg-white p-6 shadow-[0_18px_54px_rgba(15,23,42,0.08)] sm:p-8">
-        <div className="mx-auto max-w-3xl text-center">
-          <h1 className="font-(family-name:--font-heading) text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-            Contact the DocTalk Team
-          </h1>
-          <p className="mt-4 text-sm leading-7 text-slate-500 sm:text-base">
-            Reach out for booking support, doctor profile updates, or
-            partnership questions.
-          </p>
-        </div>
+    <div className="mx-auto flex w-full max-w-5xl items-center justify-center px-4 py-10 sm:px-6 lg:px-8 lg:py-16">
+      <section className="w-full rounded-[30px] border border-slate-200 bg-white p-8 text-center shadow-[0_18px_54px_rgba(15,23,42,0.08)] sm:p-10">
+        <svg
+          className="mx-auto h-40 w-40 text-blue-400"
+          viewBox="0 0 220 220"
+          fill="none"
+          aria-hidden="true"
+        >
+          <rect
+            x="45"
+            y="30"
+            width="130"
+            height="160"
+            rx="16"
+            stroke="currentColor"
+            strokeWidth="8"
+          />
+          <path
+            d="M75 85h70M75 110h52"
+            stroke="currentColor"
+            strokeWidth="8"
+            strokeLinecap="round"
+          />
+          <circle
+            cx="160"
+            cy="165"
+            r="26"
+            fill="#dbeafe"
+            stroke="#2563eb"
+            strokeWidth="7"
+          />
+          <path
+            d="m178 184 20 20"
+            stroke="#2563eb"
+            strokeWidth="7"
+            strokeLinecap="round"
+          />
+          <path
+            d="m148 157 10 10M158 157l-10 10"
+            stroke="#ef4444"
+            strokeWidth="7"
+            strokeLinecap="round"
+          />
+        </svg>
 
-        <div className="mt-8 grid gap-6 lg:grid-cols-[1fr_1.1fr]">
-          <div className="space-y-4 rounded-[28px] bg-slate-50 p-6">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">
-                Support
-              </p>
-              <h2 className="mt-2 text-2xl font-bold text-slate-900">
-                Get help quickly
-              </h2>
-            </div>
-            <p className="text-sm leading-7 text-slate-600">
-              We usually reply within one business day for appointment, doctor
-              profile, and technical questions.
-            </p>
-            <div className="space-y-3 text-sm text-slate-600">
-              <p>
-                <strong className="text-slate-900">Email:</strong>{" "}
-                support@doctalk.example
-              </p>
-              <p>
-                <strong className="text-slate-900">Phone:</strong> +880 1234
-                567890
-              </p>
-              <p>
-                <strong className="text-slate-900">Hours:</strong> Saturday to
-                Thursday, 9:00 AM - 7:00 PM
-              </p>
-            </div>
-          </div>
+        <h1 className="mt-6 font-(family-name:--font-heading) text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+          Page Not Found
+        </h1>
+        <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
+          Contact page is not available in this assignment requirement. Please
+          return to the homepage to continue browsing doctors and bookings.
+        </p>
 
-          <form className="rounded-[28px] border border-slate-200 bg-white p-6 shadow-[0_12px_36px_rgba(15,23,42,0.06)]">
-            <div className="grid gap-4 sm:grid-cols-2">
-              <label className="form-control w-full">
-                <span className="label-text mb-2 text-sm font-semibold text-slate-700">
-                  Your Name
-                </span>
-                <input
-                  className="input input-bordered w-full rounded-2xl border-slate-200"
-                  placeholder="Enter your name"
-                />
-              </label>
-              <label className="form-control w-full">
-                <span className="label-text mb-2 text-sm font-semibold text-slate-700">
-                  Email Address
-                </span>
-                <input
-                  className="input input-bordered w-full rounded-2xl border-slate-200"
-                  placeholder="you@example.com"
-                />
-              </label>
-            </div>
-
-            <label className="form-control mt-4 w-full">
-              <span className="label-text mb-2 text-sm font-semibold text-slate-700">
-                Message
-              </span>
-              <textarea
-                className="textarea textarea-bordered min-h-40 w-full rounded-2xl border-slate-200"
-                placeholder="Tell us how we can help"
-              />
-            </label>
-
-            <button
-              type="button"
-              className="btn btn-primary mt-5 w-full rounded-full font-semibold"
-            >
-              Send Message
-            </button>
-          </form>
-        </div>
+        <Link
+          to="/"
+          className="btn btn-primary mt-8 rounded-full px-8 font-semibold shadow-lg shadow-primary/20"
+        >
+          Back to Homepage
+        </Link>
       </section>
     </div>
   );

@@ -26,7 +26,7 @@ export function DoctorDetailsPage() {
     return (
       <ErrorState
         title="Doctor not found"
-        message="The doctor profile you tried to open does not exist or has been removed."
+        message={`No doctor profile found for "${slug}". The doctor profile you tried to open does not exist or has been removed.`}
         footerVisible={false}
       />
     );
