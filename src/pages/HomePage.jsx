@@ -41,9 +41,6 @@ export function HomePage() {
     <div className="mx-auto w-full max-w-7xl px-4 py-6 sm:px-6 lg:px-8 lg:py-8">
       <section className="overflow-hidden rounded-[36px] border border-slate-200 bg-[linear-gradient(135deg,rgba(219,234,254,0.85),rgba(239,246,255,0.9)_42%,rgba(255,255,255,0.96))] px-5 py-8 shadow-[0_22px_70px_rgba(37,99,235,0.12)] sm:px-8 lg:px-10 lg:py-12">
         <div className="mx-auto max-w-4xl text-center">
-          <p className="mb-4 inline-flex items-center rounded-full border border-blue-100 bg-white px-4 py-1 text-sm font-semibold text-primary shadow-sm">
-            Trusted care, one appointment at a time
-          </p>
           <h1 className="font-(family-name:--font-heading) text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
             Dependable Care, Backed by Trusted Professionals.
           </h1>
