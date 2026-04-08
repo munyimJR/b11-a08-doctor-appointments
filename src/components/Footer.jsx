@@ -21,6 +21,11 @@ const socialLinks = [
     type: "x",
   },
   {
+    label: "YouTube",
+    href: "https://youtube.com/",
+    type: "youtube",
+  },
+  {
     label: "LinkedIn",
     href: "https://linkedin.com/",
     type: "linkedin",
