@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { usePageChrome } from "../hooks/usePageChrome.js";
 
 export function ErrorState({ title, message, footerVisible = false }) {
-  usePageChrome({ footerVisible, title: `${title} | Phudu` });
+  usePageChrome({ footerVisible, title: `${title} | DocTalk` });
 
   return (
     <div className="mx-auto flex w-full max-w-4xl items-center justify-center px-4 py-16 sm:px-6 lg:px-8 lg:py-24">

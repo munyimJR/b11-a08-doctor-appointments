@@ -18,7 +18,7 @@ export function HomePage() {
   const [showAll, setShowAll] = useState(false);
   const [searchText, setSearchText] = useState("");
 
-  usePageChrome({ footerVisible: true, title: "Phudu | Home" });
+  usePageChrome({ footerVisible: true, title: "DocTalk | Home" });
 
   const filteredDoctors = useMemo(() => {
     const query = searchText.trim().toLowerCase();
@@ -156,7 +156,7 @@ export function HomePage() {
         <div className="mt-10 rounded-[28px] border border-sky-100 bg-white p-6 shadow-[0_18px_52px_rgba(15,23,42,0.08)]">
           <div className="flex flex-wrap items-center justify-between gap-3">
             <h3 className="font-(family-name:--font-heading) text-2xl font-bold text-slate-900">
-              Why patients choose Phudu
+              Why patients choose DocTalk
             </h3>
             <span className="badge badge-primary badge-outline rounded-full px-3 py-3 font-semibold">
               Responsive care flow

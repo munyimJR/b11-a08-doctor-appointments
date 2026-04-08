@@ -6,12 +6,12 @@ import { Navbar } from "./Navbar.jsx";
 import { Footer } from "./Footer.jsx";
 
 const titleFromPath = (pathname) => {
-  if (pathname === "/") return "Phudu | Home";
-  if (pathname === "/bookings") return "Booking | Phudu";
-  if (pathname === "/blogs") return "Blogs | Phudu";
-  if (pathname === "/contact-us") return "Contact Us | Phudu";
-  if (pathname.startsWith("/doctors/")) return "Doctor Details | Phudu";
-  return "Page not found | Phudu";
+  if (pathname === "/") return "DocTalk | Home";
+  if (pathname === "/bookings") return "Booking | DocTalk";
+  if (pathname === "/blogs") return "Blogs | DocTalk";
+  if (pathname === "/contact-us") return "Contact Us | DocTalk";
+  if (pathname.startsWith("/doctors/")) return "Doctor Details | DocTalk";
+  return "Page not found | DocTalk";
 };
 
 export function AppShell({ children }) {

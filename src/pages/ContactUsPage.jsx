@@ -1,14 +1,14 @@
 import { usePageChrome } from "../hooks/usePageChrome.js";
 
 export function ContactUsPage() {
-  usePageChrome({ footerVisible: true, title: "Contact Us | Phudu" });
+  usePageChrome({ footerVisible: true, title: "Contact Us | DocTalk" });
 
   return (
     <div className="mx-auto w-full max-w-7xl px-4 py-6 sm:px-6 lg:px-8 lg:py-8">
       <section className="rounded-[34px] border border-slate-200 bg-white p-6 shadow-[0_18px_54px_rgba(15,23,42,0.08)] sm:p-8">
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="font-(family-name:--font-heading) text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-            Contact the Phudu Team
+            Contact the DocTalk Team
           </h1>
           <p className="mt-4 text-sm leading-7 text-slate-500 sm:text-base">
             Reach out for booking support, doctor profile updates, or
@@ -33,7 +33,7 @@ export function ContactUsPage() {
             <div className="space-y-3 text-sm text-slate-600">
               <p>
                 <strong className="text-slate-900">Email:</strong>{" "}
-                support@phudu.example
+                support@doctalk.example
               </p>
               <p>
                 <strong className="text-slate-900">Phone:</strong> +880 1234

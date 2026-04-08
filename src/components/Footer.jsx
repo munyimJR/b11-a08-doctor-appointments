@@ -34,11 +34,11 @@ export function Footer() {
         <Link to="/" className="flex items-center gap-2 text-slate-900">
           <img
             src={brandAssets.logoImage}
-            alt="Phudu"
+            alt="DocTalk"
             className="h-10 w-auto"
           />
           <span className="font-(family-name:--font-heading) text-2xl font-bold tracking-tight">
-            Phudu
+            DocTalk
           </span>
         </Link>
 

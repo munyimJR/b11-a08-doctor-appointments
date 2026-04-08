@@ -38,7 +38,7 @@ function TriangleBar(props) {
 export function BookingsPage() {
   const { bookedDoctors, cancelDoctor } = useApp();
 
-  usePageChrome({ footerVisible: true, title: "Booking | Phudu" });
+  usePageChrome({ footerVisible: true, title: "Booking | DocTalk" });
 
   const chartData = useMemo(
     () =>

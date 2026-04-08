@@ -13,12 +13,12 @@ export function DoctorDetailsPage() {
 
   usePageChrome({
     footerVisible: true,
-    title: doctor ? `${doctor.name} | Phudu` : "Doctor Details | Phudu",
+    title: doctor ? `${doctor.name} | DocTalk` : "Doctor Details | DocTalk",
   });
 
   useEffect(() => {
     if (doctor) {
-      document.title = `${doctor.name} | Phudu`;
+      document.title = `${doctor.name} | DocTalk`;
     }
   }, [doctor]);
 
