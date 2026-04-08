@@ -10,8 +10,8 @@ import {
 import { usePageChrome } from "../hooks/usePageChrome.js";
 
 const bannerImages = [
-  "https://i.ibb.co.com/b5QYZb2Z/female-doctor-hospital-room.jpg",
-  "https://i.ibb.co.com/s9vPPrjX/portrait-smiling-young-doctors-standing-together-portrait-medical-staff-inside-modern-hospital-smili.jpg",
+  "https://i.ibb.co.com/j9rydZpg/portrait-smiling-young-doctors-standing-together-portrait-medical-staff-inside-modern-hospital-smili.jpg",
+  "https://i.ibb.co.com/qLnBVqr7/female-doctor-hospital-room-4.jpg",
 ];
 
 export function HomePage() {
